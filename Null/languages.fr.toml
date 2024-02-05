@@ -1,0 +1,11 @@
+languageCode = 'fr-FR'
+languageName = 'FR'
+weight = 1
+
+title = 'Dice Irae'
+copyright = 'All Rights Reserved'
+
+[author]
+    name = "Bilow"
+    description = "Maître du Jeu en quête d'XP et de cool."
+    email = "contact@dice-irae.com"

@@ -1,0 +1,48 @@
+theme: hugo-theme-walden
+
+baseURL: https://dice-irae.xyz
+
+copyright: All Rights Reserved
+enableEmojii: true
+
+defaultContentLanguage: fr
+defaultContentLanguageInSubdir: true
+languages:
+  fr:
+    disabled: false
+    languageCode: fr-FR
+    languageName: FR
+    params: 
+      author:
+        name: Bilow
+        description: Maître du Jeu en quête d'XP et de cool.
+        email: contact@dice-irae.xyz
+    title: Dice Irae
+    menus:
+      main:
+      - name: Blog
+        pageRef: /blog
+        weight: 10
+      - name: Projets
+        pageRef: /projets
+        weight: 20
+    weight: 1
+  en:
+    disabled: false
+    languageCode: en-US
+    languageName: EN
+    params:
+      author:
+          name: Bilow
+          description: Game Master out for XP and cool.
+          email: contact@dice-irae.xyz
+    title: Dice Irae
+    menus:
+      main:
+      - name: Blog
+        pageRef: /blog
+        weight: 10
+      - name: Projects
+        pageRef: /projets
+        weight: 20
+    weight: 2

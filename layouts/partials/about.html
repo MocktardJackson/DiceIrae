@@ -1,0 +1,11 @@
+<div class="about">
+    <div class="avatar">
+        <img src="{{"./images/avatar.jpg" | relURL }}" alt="avatar">
+    </div>
+    <p class="name">{{.Site.Params.author.name}}</p>
+    <p class="description">{{.Site.Params.author.description}}</p>
+    <p class="email">
+        <span><i class="bi bi-envelope"></i></span> 
+        <span>{{.Site.Params.author.email}}</span>
+    </p>
+</div>
