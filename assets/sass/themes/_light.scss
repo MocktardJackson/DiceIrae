@@ -1,17 +1,15 @@
 :root[data-theme="light"] {
-
-    --primary: #016072;
-    --primary-light: #ddf6fb;
-    --secondary: var(--orange);
-
-    --baseof-bg: var(--white);
-    --baseof-ft: var(--grey-600);
-    --baseof-bd: var(--grey-200);
-
-    --stager-bg: var(--grey-100);
+    --primary: #ff80bf; /* Vert pastel un peu plus foncé pour améliorer la lisibilité, conservé de la dernière modification */
+    --primary-light: #fdd2e8; /* Ajustement pour une variation plus claire du vert assombri */
+    --secondary: #66cc8a; /* Rose pastel légèrement néon, conservé pour l'harmonie */
+    
+    /* Mise à jour du fond pour un vert très clair pastel */
+    --baseof-bg: #EFFAE5; /* Fond d'un très léger vert clair pastel pour une ambiance douce et accueillante */
+    --baseof-ft: var(--grey-600); /* Couleur du texte conservée pour assurer la lisibilité */
+    --baseof-bd: var(--grey-200); /* Bordures légères pour ne pas surcharger visuellement */
+    
+    /* Légères variations de gris pour les composants d'interface, conservées pour la cohérence */
+    --stager-bg: #F7FDEE;
     --stager-ft: var(--grey-600);
     --stager-bd: var(--grey-400);
-
 }
-
-

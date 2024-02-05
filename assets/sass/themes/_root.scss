@@ -1,19 +1,20 @@
 :root {
+    --white:    #ffffff; /* Blanc conservé pour les contrastes et espaces */
+    --black:    #000000; /* Noir pour le texte et éléments forts */
+    
+    /* Autres couleurs de base ajustées pour complémenter le nouveau fond */
+    --blue:     #a3d2fc; /* Bleu pastel */
+    --indigo:   #b19cd9; /* Indigo pastel */
+    --purple:   #dcb0ff; /* Pourpre pastel */
+    --pink:     #ff80bf; /* Rose pastel légèrement néon */
+    --red:      #ff9999; /* Rouge pastel */
+    --orange:   #ffb380; /* Orange pastel */
+    --yellow:   #fff080; /* Jaune pastel */
+    --green:    #66cc8a; /* Vert pastel ajusté */
+    --teal:     #80e5d8; /* Sarcelle pastel */
+    --cyan:     #80cce5; /* Cyan pastel */
 
-    --white:    #ffffff;
-    --black:    #000000;
-
-    --blue:     #0d6efd;
-    --indigo:   #6610f2;
-    --purple:   #6f42c1;
-    --pink:     #d63384;
-    --red:      #dc3545;
-    --orange:   #fd7e14;
-    --yellow:   #ffc107;
-    --green:    #198754;
-    --teal:     #20c997;
-    --cyan:     #0dcaf0;
-
+    /* Gris conservés pour la structure et la lisibilité */
     --grey-100: #f8f9fa;
     --grey-200: #e9ecef;
     --grey-300: #dee2e6;
@@ -23,5 +24,4 @@
     --grey-700: #495057;
     --grey-800: #343a40;
     --grey-900: #212529;
-
 }

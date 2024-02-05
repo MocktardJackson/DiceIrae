@@ -2,17 +2,17 @@
 
     a {
         color: var(--primary);
-        background-color: var(--white);
+        background-color: var(--stager-bg);
         transition: all 1s;
         &:hover {
             color: var(--secondary);
-            background-color: var(--white);
+            background-color: var(--stager-bg);
         }
     }
 
     .content-header {
         text-align: center;
-        border-bottom: 1px solid var(--baseof-bd);
+        border-bottom: 2px solid var(--primary-light);
         margin-bottom: 2rem;
         padding: 1rem;
         .title {
@@ -33,7 +33,7 @@
     .content-tag {
         margin: 3rem 0;
         padding-top: 1rem;
-        border-top: 1px solid var(--baseof-bd);
+        border-top: 2px solid var(--primary-light);
 
         span {
             margin-right: 1rem;

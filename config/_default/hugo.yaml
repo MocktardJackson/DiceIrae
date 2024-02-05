@@ -46,3 +46,12 @@ languages:
         pageRef: /projets
         weight: 20
     weight: 2
+
+imaging:
+  resampleFilter: box # Type de filtre pour le redimensionnement, 'box' est bon pour les thumbnails
+  quality: 75 # Qualité des images générées, ajustez selon vos besoins
+  imaging.sizes:
+    name: thumbnail
+    width: 320 # Largeur souhaitée pour les thumbnails
+    height: 240 # Hauteur souhaitée pour les thumbnails
+    fit: fill # Ajuste l'image pour remplir les dimensions (autres options : 'fit', 'cover')

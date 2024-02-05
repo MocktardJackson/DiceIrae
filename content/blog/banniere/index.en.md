@@ -8,8 +8,3 @@ tags: ["Introduction"]
 thumbnail: images/default/headline.jpg
 headline: true
 ---
-
-
-
-<!--more-->
-
