@@ -12,8 +12,8 @@
         display: none;
         padding: 0;
 
-        width: 180px;
-        height: 120px;
+        width: 360px;
+        height: 240px;
         margin-right: 1rem;
         background-color: var(--stager-bg); /* Assure que le fond des thumbnails est le même */
 
@@ -29,12 +29,12 @@
         flex: 1;
 
         .item-text-title {
-            font-size: 1.25rem;
-            line-height: 1.5rem;
+            font-size: 1.8rem;
+            line-height: 2rem;
         }
 
         .item-text-brief {
-            font-size: .875rem;
+            font-size: 1rem;
             line-height: 1.375rem;
             margin: .5rem 0;
         }
@@ -56,8 +56,9 @@
             background-color: var(--stager-bg); /* Utilise --stager-bg pour l'arrière-plan des liens */
             transition: all .5s;
             &:hover {
-                color: var(--grey-900); /* Correction typo: de --gray-900 à --grey-900 */
-                background-color: var(--primary-light);
+                color: var(--secondary); /* Correction typo: de --gray-900 à --grey-900 */
+                /*background-color: var(--primary-light);*/
+                
             }
         }
 

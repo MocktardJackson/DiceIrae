@@ -2,7 +2,7 @@
 /* Font Family */
 *, *::after, *::before {
   margin: 0;
-  padding: 0;
+  padding: 25;
   box-sizing: border-box; }
 
 a {
@@ -51,22 +51,22 @@ img {
   --grey-900: #212529; }
 
 :root[data-theme="light"] {
-  --primary: #ff80bf;
+  --primary: #435D53;
   /* Vert pastel un peu plus foncé pour améliorer la lisibilité, conservé de la dernière modification */
-  --primary-light: #fdd2e8;
+  --primary-light: #688B8A;
   /* Ajustement pour une variation plus claire du vert assombri */
-  --secondary: #66cc8a;
+  --secondary: #C7959E;
   /* Rose pastel légèrement néon, conservé pour l'harmonie */
   /* Mise à jour du fond pour un vert très clair pastel */
-  --baseof-bg: #EFFAE5;
-  /* Fond d'un très léger vert clair pastel pour une ambiance douce et accueillante */
-  --baseof-ft: var(--grey-600);
-  /* Couleur du texte conservée pour assurer la lisibilité */
+  --baseof-bg: #f7fcf1;
+  /* #EFFAE5 Fond d'un très léger vert clair pastel pour une ambiance douce et accueillante */
+  --baseof-ft: #435D53;
+  /*var(--grey-700); Couleur du texte conservée pour assurer la lisibilité */
   --baseof-bd: var(--grey-200);
   /* Bordures légères pour ne pas surcharger visuellement */
   /* Légères variations de gris pour les composants d'interface, conservées pour la cohérence */
-  --stager-bg: #F7FDEE;
-  --stager-ft: var(--grey-600);
+  --stager-bg: #f7fcf1;
+  --stager-ft: #435D53;
   --stager-bd: var(--grey-400); }
 
 /* Background */
@@ -380,7 +380,8 @@ body {
 
 #header {
   grid-column: 1;
-  grid-row: 1; }
+  grid-row: 1;
+  background-color: var(--stager-bg); }
 
 #necker {
   grid-column: 1;
@@ -414,7 +415,7 @@ body {
 .single-container {
   background-color: var(--stager-bg);
   margin-bottom: 2rem;
-  padding: 1rem; }
+  padding: 0.25rem; }
 
 .nav-container {
   margin-bottom: 2rem;
@@ -439,7 +440,7 @@ body {
   align-items: center;
   justify-self: start;
   padding: .75rem 1rem;
-  font-size: 1.375rem; }
+  font-size: 4.5rem; }
   #title a {
     text-decoration: none;
     color: var(--primary);
@@ -456,6 +457,7 @@ body {
   font-size: 1.375rem; }
 
 #menu {
+  font-size: 1.8rem;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row: 2;
@@ -470,7 +472,7 @@ a {
   a:hover {
     color: var(--secondary); }
 
-@media (min-width: 640px) {
+@media (min-width: 800px) {
   .base-header {
     display: flex;
     align-items: center;
@@ -533,9 +535,10 @@ a {
     padding: .25rem 0;
     color: var(--stager-bg); }
   .menu .active {
-    color: var(--secondary); }
+    color: var(--secondary);
+    font-weight: bold; }
 
-@media (min-width: 640px) {
+@media (min-width: 800px) {
   .menu {
     border-top: none;
     padding: 0 1rem; }
@@ -571,7 +574,7 @@ a {
       line-height: 1.5rem;
       text-align: left; }
 
-@media (min-width: 640px) {
+@media (min-width: 800px) {
   .headline .headline-text {
     width: 80%;
     max-width: 1000px;
@@ -605,7 +608,8 @@ a {
   .about .name {
     font-size: 1.25rem;
     text-align: center;
-    margin-bottom: .75rem; }
+    margin-bottom: .75rem;
+    font-weight: bold; }
   .about .description {
     margin-bottom: .5rem; }
   .about .email {
@@ -626,8 +630,8 @@ a {
   .item .item-thumbnail {
     display: none;
     padding: 0;
-    width: 180px;
-    height: 120px;
+    width: 360px;
+    height: 240px;
     margin-right: 1rem;
     background-color: var(--stager-bg);
     /* Assure que le fond des thumbnails est le même */ }
@@ -640,10 +644,10 @@ a {
   .item .item-text {
     flex: 1; }
     .item .item-text .item-text-title {
-      font-size: 1.25rem;
-      line-height: 1.5rem; }
+      font-size: 1.8rem;
+      line-height: 2rem; }
     .item .item-text .item-text-brief {
-      font-size: .875rem;
+      font-size: 1rem;
       line-height: 1.375rem;
       margin: .5rem 0; }
     .item .item-text .item-text-meta {
@@ -661,9 +665,9 @@ a {
       /* Utilise --stager-bg pour l'arrière-plan des liens */
       transition: all .5s; }
       .item .item-text a:hover {
-        color: var(--grey-900);
+        color: var(--secondary);
         /* Correction typo: de --gray-900 à --grey-900 */
-        background-color: var(--primary-light); }
+        /*background-color: var(--primary-light);*/ }
   .item:last-child {
     padding-bottom: 0;
     margin-bottom: 0;
