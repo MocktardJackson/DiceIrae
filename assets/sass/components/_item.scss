@@ -1,17 +1,15 @@
 .item {
     margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
     border-bottom: 1px solid var(--stager-bg); /* Modifié pour utiliser --stager-bg */
     background-color: var(--stager-bg); /* Modifié pour utiliser --stager-bg */
-
-
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     display: flex;
     flex-direction: row;
-
+    border-radius: 7px;
     .item-thumbnail {
         display: none;
         padding: 0;
-
         width: 360px;
         height: 240px;
         margin-right: 1rem;
@@ -19,9 +17,10 @@
 
         img {
             width: 100%;
-            max-width: 100%;
+            max-width: auto;
             border-radius: .5rem;
             object-fit: cover; /* Assure que les images soient bien ajustées et homogènes */
+            
         }
     }
     
@@ -51,6 +50,7 @@
         }
 
         a {
+
             display: block;
             color: var(--stager-ft);
             background-color: var(--stager-bg); /* Utilise --stager-bg pour l'arrière-plan des liens */

@@ -4,6 +4,12 @@
         color: var(--primary); // Utilise le rose pastel pour les titres
     }
 
+    h1 {
+        margin-top: 2rem; 
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
     h2 { 
         margin-top: 3.5rem; 
         font-size: 1.5rem;
@@ -27,11 +33,13 @@
         font-weight: 500;
     }
 
+    color: var(--baseof-ft);
     // Paragraphes
     p {
         margin-top: 1rem;
         line-height: 1.75rem;
-        color: var(--grey-600); // Gris foncé pour le texte, améliore la lisibilité
+        color: var(--baseof-ft); // Gris foncé pour le texte, améliore la lisibilité
+        text-align: justify;
     }
 
     // Citations
@@ -92,25 +100,31 @@
         }
     }
 
-    // Images
-    img {
-        margin: 1rem 0 0;
-        border: 1px solid var(--grey-300); // Encadrement en gris pour intégrer doucement l'image
-    }
-
     // Listes
     ol, ul {
         margin-top: 1rem;
         padding-left: 1.25rem;
-        color: var(--grey-700); // Assure que le texte des listes est lisible
+        color: var(--baseof-ft); // Assure que le texte des listes est lisible
         li {
             margin-top: .5rem;
+            line-height: 1.5rem; // Augmente l'interligne. Ajustez cette valeur selon vos besoins.
         }
     }
     ul li {
-        list-style: disc inside var(--grey-500); // Points de liste en gris pour la discrétion
+        list-style: disc inside var(--baseof-ft); // Points de liste en gris pour la discrétion
     }
 
+    a {
+        color: #D17A8D; // Rose plus foncé pour un meilleur contraste
+        text-decoration: underline; // Souligne les liens pour une meilleure visibilité
+        &:hover, &:focus {
+            color: #C05667; // Un rose encore plus foncé au survol pour une meilleure interaction
+            text-decoration: none; // Optionnel: retire le soulignement au survol pour changer l'aspect
+        }
+    }
+    strong, b {
+        color: var(--baseof-ft); // Assure que le texte en gras est de la même couleur
+    }
     // Tableaux
     .table-container {
         table {

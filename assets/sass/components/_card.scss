@@ -1,12 +1,12 @@
 .card {
 
-    border: 1px solid var(--stager-bg);
+    border-radius: 7px;
     padding: .75rem;
     margin-bottom: 2rem;
     position: relative;
-
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     font-size: .875rem;
-
+    margin-top: 1rem;
 
     .card-title {
 
@@ -19,12 +19,9 @@
 
         font-size: 1rem;
         line-height: 1rem;
+        color: var(--primary);
+
     }
-
-
-
-
-
 
     .category {
 
@@ -116,8 +113,14 @@
 
         a {
             border-radius: .25rem;
-            padding: .125rem .5rem;
-
+            padding: .125rem .4rem;
+            &:hover {
+                padding: 0.6rem; // Augmente l'espacement autour du texte
+                background-color: transparent; // Supprime le fond coloré
+                color: var(--secondary); // Change la couleur du texte au survol
+                border-radius: 5px; // Adoucit les angles pour un look plus moderne
+                text-decoration: none; // Optionnel: supprime le soulignement
+            }
 
 
         }

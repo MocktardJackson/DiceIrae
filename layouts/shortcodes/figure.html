@@ -1,8 +1,34 @@
-<!-- image -->
-<figure>
-    <img src="{{ .Get "src" }}" />
-    <figcaption>
-        {{ .Get "title" }}
-    </figcaption>
-</figure>
-<!-- image -->
+{{ if .Get "name" }}
+    {{/* Tente de trouver une image par son nom dans les ressources de la page. */}}
+    {{ $original := .Page.Resources.GetMatch (printf "%s*" (.Get "name") ) }}
+    {{ if $original }}
+        {{/* Sélectionne la commande de traitement d'image basée sur l'input de l'utilisateur. */}}
+        {{ $command := .Get "command" }}
+        {{ $options := .Get "options" }}
+        {{ if eq $command "Fit"}}
+            {{ .Scratch.Set "image" ($original.Fit $options) }}
+        {{ else if eq $command "Resize"}}
+            {{ .Scratch.Set "image" ($original.Resize $options) }}
+        {{ else if eq $command "Fill"}}
+            {{ .Scratch.Set "image" ($original.Fill $options) }}
+        {{ else }}
+            {{/* Génère une erreur si la commande n'est pas reconnue. */}}
+            {{ errorf "Invalid image processing command: Must be one of Fit, Fill or Resize."}}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ $image := .Scratch.Get "image" }}
+{{ if or ($image) (.Get "src") }}
+    <figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
+        {{ with .Get "link"}}<a href="{{.}}">{{ end }}
+            <img 
+            src='{{ if (.Get "name") }}{{ $image.RelPermalink }}{{ else }}{{ .Get "src" }}{{ end }}'
+            {{ if (.Get "name") }}width="{{ $image.Width }}" height="{{ $image.Height }}"{{ else }}{{ with .Get "width" }}width="{{.}}" {{ end }}{{ with .Get "height" }}height="{{.}}" {{ end }}{{ end }}
+            alt="{{ with .Inner }}{{ . }}{{ else }}{{ .Get "alt" }}{{ end }}"
+            >
+        {{ if .Get "link"}}</a>{{ end }}
+        {{ with .Inner }}
+            <figcaption>{{ . }}</figcaption>
+        {{ end }}
+    </figure>
+{{ end }}

@@ -16,7 +16,19 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Cutive Mono" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Caesar Dressing" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Permanent Marker" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Blaka" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Pirata One" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Luckiest Guy" rel="stylesheet" type="text/css">
+
 
 <!-- SASS -->
 {{ $css := resources.Get "sass/main.scss" | resources.ToCSS (dict "targetPath" "css/main.css" ) }}
 <link href="{{ $css.RelPermalink }}" rel="stylesheet" type="text/css">
+
+<!-- Medium Zoom -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" defer></script>
+<script src="/js/zoom-image/placeholders.js" defer></script>
+<script src="/js/zoom-image/index.js" defer></script>

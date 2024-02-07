@@ -1,23 +1,27 @@
 .markdown {
-
     figure {
-
-        margin: 1rem 0 0;
-
+        display: block; /* S'assure que le figure se comporte comme un bloc */
+        text-align: center; /* Centre le contenu du figure, y compris l'image et la légende */
+        margin-top: 1.5rem;
         img {
-            margin-top: 0;
-            width: 100%;
-            max-width: 100%;
-    
+            margin: 0 auto; /* Centre l'image dans le figure */
+            max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+            height: auto; /* Pour maintenir le ratio d'aspect */
+            box-shadow: 2px 3px 5px rgba(0,0,0,0.5);
         }
-    
+
         figcaption {
-    
-            text-align: right;
+            text-align: center; /* Centre la légende sous l'image */
             font-size: .875rem;
-            padding: .5rem .25rem 0;
-    
+            padding: .2rem .25rem 0;
         }
     }
+}
 
+.md__image img {
+    max-width: 80%; /* Empêche l'image de dépasser la largeur de son conteneur */
+    height: auto; /* Maintient le ratio d'aspect de l'image */
+    display: block; /* Affiche l'image comme un bloc */
+    margin: 0 auto; /* Centre l'image horizontalement */
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.5);
 }

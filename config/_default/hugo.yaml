@@ -2,6 +2,9 @@ theme: hugo-theme-walden
 
 baseURL: https://dice-irae.xyz
 
+markup.goldmark.renderer:
+  unsafe: true # Allow HTML in md files
+
 copyright: All Rights Reserved
 enableEmojii: true
 
@@ -9,6 +12,9 @@ defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
 languages:
   fr:
+    taxonomies:
+      category: categories
+      tag: tags
     disabled: false
     languageCode: fr-FR
     languageName: FR
@@ -55,3 +61,10 @@ imaging:
     width: 320 # Largeur souhaitée pour les thumbnails
     height: 240 # Hauteur souhaitée pour les thumbnails
     fit: fill # Ajuste l'image pour remplir les dimensions (autres options : 'fit', 'cover')
+
+module:
+  imports:
+  - disable: true
+  - ignoreConfig: false
+  - ignoreImports: false
+  - path: github.com/hugomods/images
