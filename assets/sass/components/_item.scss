@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: row;
     border-radius: 7px;
+
     .item-thumbnail {
         display: none;
         padding: 0;
@@ -14,13 +15,11 @@
         height: 240px;
         margin-right: 1rem;
         background-color: var(--stager-bg); /* Assure que le fond des thumbnails est le même */
-
         img {
             width: 100%;
             max-width: auto;
             border-radius: .5rem;
             object-fit: cover; /* Assure que les images soient bien ajustées et homogènes */
-            
         }
     }
     
@@ -63,13 +62,6 @@
         }
 
     }
-
-    &:last-child {
-        padding-bottom: 0;
-        margin-bottom: 0;
-        border-bottom: none;
-    }
-
 }
 
 /*@media (min-width: $sm) {

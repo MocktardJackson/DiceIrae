@@ -2,12 +2,9 @@ theme: hugo-theme-walden
 
 baseURL: https://dice-irae.xyz
 
-markup.goldmark.renderer:
-  unsafe: true # Allow HTML in md files
-
 copyright: All Rights Reserved
 enableEmojii: true
-
+rssLimit: 50
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
 languages:
@@ -68,3 +65,13 @@ module:
   - ignoreConfig: false
   - ignoreImports: false
   - path: github.com/hugomods/images
+
+outputs:
+  home:
+  - html
+  - rss
+  section:
+  - html
+  - rss
+  taxonomy:
+  - html

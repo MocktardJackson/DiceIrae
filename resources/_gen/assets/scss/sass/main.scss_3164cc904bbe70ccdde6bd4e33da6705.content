@@ -611,9 +611,15 @@ a {
   .about .description {
     margin-bottom: .5rem; }
   .about .email {
+    margin-bottom: .25rem;
     text-align: center;
     font-size: .875rem; }
     .about .email span {
+      margin: 0 .125rem; }
+  .about .rss {
+    text-align: center;
+    font-size: .875rem; }
+    .about .rss span {
       margin: 0 .125rem; }
 
 .item {
@@ -668,10 +674,6 @@ a {
         color: var(--secondary);
         /* Correction typo: de --gray-900 à --grey-900 */
         /*background-color: var(--primary-light);*/ }
-  .item:last-child {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    border-bottom: none; }
 
 /*@media (min-width: $sm) {
     .item {

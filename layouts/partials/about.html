@@ -8,4 +8,9 @@
         <span><i class="bi bi-envelope"></i></span> 
         <span>{{.Site.Params.author.email}}</span>
     </p>
+    <p class="rss">
+        <span><i class="bi bi-rss"></i></span> 
+        <span><a href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/index.xml" title="{{ i18n "subscribeToRSS" }}">{{ "RSS" }}</a></span>
+    </p>
+    
 </div>
