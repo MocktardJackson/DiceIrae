@@ -1,6 +1,6 @@
 theme: hugo-theme-walden
 
-baseURL: "//dice-irae.xyz"
+baseURL: "//dice-irae.xyz/"
 
 copyright: All Rights Reserved
 enableEmojii: true
