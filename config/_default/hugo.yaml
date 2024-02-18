@@ -59,12 +59,6 @@ imaging:
     height: 240 # Hauteur souhaitée pour les thumbnails
     fit: fill # Ajuste l'image pour remplir les dimensions (autres options : 'fit', 'cover')
 
-module:
-  imports:
-  - disable: true
-  - ignoreConfig: false
-  - ignoreImports: false
-  - path: github.com/hugomods/images
 
 outputs:
   home:
