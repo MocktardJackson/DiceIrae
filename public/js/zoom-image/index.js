@@ -6,14 +6,20 @@ const zoomScrollOffset = mediumZoom('#zoom-scrollOffset', {
     background: 'rgba(25, 18, 25, .9)',
 })
 
-// Trigger the zoom when the button is clicked
-const zoomToTrigger = mediumZoom('#zoom-trigger')
-const button = document.querySelector('#button-trigger')
-button.addEventListener('click', () => zoomToTrigger.open())
+let zoomToTrigger, zoomToDetach;
 
-// Detach the zoom after having been zoomed once
-const zoomToDetach = mediumZoom('#zoom-detach')
-zoomToDetach.on('closed', () => zoomToDetach.detach())
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Trigger the zoom when the button is clicked
+    zoomToTrigger = mediumZoom('#zoom-trigger')
+    const button = document.querySelector('#button-trigger')
+    if (button) {
+        button.addEventListener('click', () => zoomToTrigger.open())
+    }
+
+    // Detach the zoom after having been zoomed once
+    zoomToDetach = mediumZoom('#zoom-detach')
+    zoomToDetach.on('closed', () => zoomToDetach.detach())
+});
 
 // Observe zooms to write the history
 const observedZooms = [
