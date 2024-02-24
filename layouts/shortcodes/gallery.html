@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+<div style="margin-top: 20px;">
+{{/* Récupère uniquement les images dans le dossier "img" du bundle de la page */}}
+{{ $images := (.Page.Resources.Match "img/*") }}
+{{ with $images }}
+    {{ range . }}
+    {{/* Remplit chaque image à la taille spécifiée et applique une qualité de compression */}}
+    {{ $resized := .Fill "150x115 q20" }}
+    <a href="{{ .Permalink }}" data-lightbox="gallery-item"><img src="{{ $resized.Permalink }}" alt="{{ .Name }}"></a>
+    {{ end }}
+{{ end }}
+</div>

@@ -1,0 +1,26 @@
+[categories]
+other = "CATEGORIES"
+
+[tags]
+other = "TAGS"
+
+[related]
+other = "VOIR AUSSI"
+
+[toc]
+other = "SOMMAIRE"
+
+[about]
+other = "A PROPOS"
+
+[prev]
+other = "PREC"
+
+[next]
+other = "SUIV"
+
+[read]
+other = "Lecture"
+
+[subscribeToRSS]
+other = "Abonnez-vous à notre flux RSS"
