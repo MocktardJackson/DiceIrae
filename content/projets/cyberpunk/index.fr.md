@@ -1,5 +1,5 @@
 ---
-title: "Sensibilisation Cyber-punk"
+title: "Sensibilisation Cyberpunk"
 date: 2023-10-21
 categories:
   - Animation

@@ -4,8 +4,10 @@
 
 .container {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: auto;
+    margin: auto;
+    padding-left: 3rem;
+    padding-right: 1rem;
 }
 
 .list-container {

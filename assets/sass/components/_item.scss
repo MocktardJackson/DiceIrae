@@ -3,16 +3,17 @@
     padding: 1rem;
     border-bottom: 1px solid var(--stager-bg); /* Modifié pour utiliser --stager-bg */
     background-color: var(--stager-bg); /* Modifié pour utiliser --stager-bg */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    //box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     display: flex;
     flex-direction: row;
     border-radius: 7px;
-
     .item-thumbnail {
         display: none;
         padding: 0;
-        width: 360px;
-        height: 240px;
+        max-height: 300px;
+        max-width: 500px; 
+        width: auto;
+        height: auto;
         margin-right: 1rem;
         background-color: var(--stager-bg); /* Assure que le fond des thumbnails est le même */
         img {
@@ -88,4 +89,5 @@
         }
     }
 }
+
 
