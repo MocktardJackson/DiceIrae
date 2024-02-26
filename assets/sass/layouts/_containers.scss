@@ -6,8 +6,8 @@
     width: 100%;
     max-width: auto;
     margin: auto;
-    padding-left: 3rem;
-    padding-right: 1rem;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .list-container {
@@ -20,6 +20,7 @@
     background-color: var(--stager-bg);
     margin-bottom: 2rem;
     padding: 0.25rem;
+    margin-right:2rem;
 }
 
 .nav-container {

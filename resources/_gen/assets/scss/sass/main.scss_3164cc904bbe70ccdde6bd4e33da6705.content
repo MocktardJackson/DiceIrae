@@ -388,7 +388,7 @@ body {
 #stager {
   grid-column: 1;
   grid-row: 3;
-  margin-left: 2rem;
+  margin: 3.3rem;
   background-color: var(--stager-bg);
   color: var(--stager-ft); }
 
@@ -403,8 +403,8 @@ body {
   width: 100%;
   max-width: auto;
   margin: auto;
-  padding-left: 3rem;
-  padding-right: 1rem; }
+  padding-left: auto;
+  padding-right: auto; }
 
 .list-container {
   background-color: var(--stager-bg);
@@ -414,7 +414,8 @@ body {
 .single-container {
   background-color: var(--stager-bg);
   margin-bottom: 2rem;
-  padding: 0.25rem; }
+  padding: 0.25rem;
+  margin-right: 2rem; }
 
 .nav-container {
   margin-bottom: 2rem;
@@ -632,75 +633,76 @@ a {
   margin-bottom: 1rem;
   padding: 1rem;
   border-bottom: 1px solid var(--stager-bg);
-  /* Modifié pour utiliser --stager-bg */
   background-color: var(--stager-bg);
-  /* Modifié pour utiliser --stager-bg */
+  display: flex;
+  flex-direction: column;
+  /* Changé à column pour mobile par défaut */ }
+
+.item-thumbnail {
+  display: block;
+  /* Affiche toujours la miniature, mais ajuste son placement via flex-order ci-dessous */
+  padding: 0;
+  max-height: 300px;
+  max-width: 500px;
+  width: auto;
+  /* Ajustement pour la cohérence */
+  margin-bottom: 1rem;
+  /* Ajouté pour l'espace entre la miniature et le texte sur mobile */
+  background-color: var(--stager-bg); }
+  .item-thumbnail img {
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover; }
+
+.item-text {
+  flex: 1; }
+
+.item-text-title {
+  font-size: 1.8rem;
+  line-height: 2rem; }
+
+.item-text-brief {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  margin: .5rem 0; }
+
+.item-text-meta {
   display: flex;
   flex-direction: row;
-  border-radius: 7px; }
-  .item .item-thumbnail {
-    display: none;
-    padding: 0;
-    max-height: 300px;
-    max-width: 500px;
-    width: auto;
-    height: auto;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .875rem; }
+  .item-text-meta span {
+    margin-right: 1rem; }
+
+a {
+  display: block;
+  color: var(--stager-ft);
+  background-color: var(--stager-bg);
+  transition: all .5s; }
+  a:hover {
+    color: var(--secondary); }
+
+/* Ajustements pour les écrans plus larges */
+@media (min-width: 768px) {
+  /* Utilisez 768px comme point de rupture pour les tablettes et au-delà */
+  .item {
+    flex-direction: row;
+    /* Retour à la disposition en ligne pour les écrans plus larges */ }
+  .item-thumbnail {
     margin-right: 1rem;
-    background-color: var(--stager-bg);
-    /* Assure que le fond des thumbnails est le même */ }
-    .item .item-thumbnail img {
-      width: 100%;
-      max-width: auto;
-      border-radius: .5rem;
-      object-fit: cover;
-      /* Assure que les images soient bien ajustées et homogènes */ }
-  .item .item-text {
-    flex: 1; }
-    .item .item-text .item-text-title {
-      font-size: 1.8rem;
-      line-height: 2rem; }
-    .item .item-text .item-text-brief {
-      font-size: 1rem;
-      line-height: 1.375rem;
-      margin: .5rem 0; }
-    .item .item-text .item-text-meta {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      font-size: .875rem; }
-      .item .item-text .item-text-meta span {
-        margin-right: 1rem; }
-    .item .item-text a {
-      display: block;
-      color: var(--stager-ft);
-      background-color: var(--stager-bg);
-      /* Utilise --stager-bg pour l'arrière-plan des liens */
-      transition: all .5s; }
-      .item .item-text a:hover {
-        color: var(--secondary);
-        /* Correction typo: de --gray-900 à --grey-900 */
-        /*background-color: var(--primary-light);*/ }
+    /* Restaure la marge droite pour les écrans plus larges */
+    margin-bottom: 0;
+    /* Supprime la marge du bas ajoutée pour les mobiles */ } }
 
-/*@media (min-width: $sm) {
-    .item {
-        .item-thumbnail {
-            display: block;
-        }
-    }
-}
-@media (min-width: $lg) {
-    .item {
-        .item-thumbnail {
-            display: block;
-        }
-    }
-}
-
-*/
-@media (min-width: 840px) {
-  .item .item-thumbnail {
-    display: block; } }
+@media (max-width: 767px) {
+  /* Utilisez 767px comme point de rupture pour les mobiles */
+  .item {
+    border-bottom: 1px solid var(--primary-light);
+    /* Utilisez var(--primary-light) pour la couleur de la bordure */ }
+    .item:last-child {
+      border-bottom: none;
+      /* Supprime la bordure pour le dernier élément */ } }
 
 .card {
   border-radius: 7px;
@@ -818,6 +820,9 @@ a {
     color: var(--baseof-ft);
     font-size: 4rem;
     margin: 0.1rem 1rem 1rem; }
+    @media (max-width: 640px) {
+      .content .content-header .title {
+        font-size: 2.1rem; } }
   .content .content-header .meta {
     margin: 0 1rem 2rem;
     color: var(--baseof-ft);
