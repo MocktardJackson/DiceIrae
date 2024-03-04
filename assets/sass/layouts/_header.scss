@@ -39,7 +39,8 @@
     grid-row: 2;
     align-items: start;
     justify-self: center;
-    display: none;
+    display: flex;
+    flex-direction: row;
     width: 100%;
 }
 

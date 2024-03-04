@@ -23,8 +23,8 @@
         background-color: var(--stager-bg);
         transition: all .5s;
         &:hover {
-            color: var(--stager-bg);
-            background-color: var(--secondary);
+            color: var(--secondary);
+            background-color: var(--stager-bg);
         }
     }
 }

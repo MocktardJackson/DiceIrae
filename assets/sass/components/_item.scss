@@ -1,6 +1,6 @@
 .item {
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 0rem;
     border-bottom: 1px solid var(--stager-bg);
     background-color: var(--stager-bg);
     display: flex;
@@ -74,6 +74,8 @@ a {
 
 @media (max-width: 767px) { /* Utilisez 767px comme point de rupture pour les mobiles */
     .item {
+        margin-bottom: 0rem;
+        padding: 0rem;
         border-bottom: 1px solid var(--primary-light); /* Utilisez var(--primary-light) pour la couleur de la bordure */
         &:last-child {
             border-bottom: none; /* Supprime la bordure pour le dernier élément */
