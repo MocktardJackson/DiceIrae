@@ -2,159 +2,159 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//dice-irae.xyz/en/categories/animation/</loc>
+    <loc>http://localhost:1313/en/categories/animation/</loc>
     <lastmod>2023-10-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="//dice-irae.xyz/fr/categories/animation/"
+                href="http://localhost:1313/fr/categories/animation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//dice-irae.xyz/en/categories/animation/"
+                href="http://localhost:1313/en/categories/animation/"
                 />
   </url><url>
-    <loc>//dice-irae.xyz/en/tags/awareness/</loc>
+    <loc>http://localhost:1313/en/tags/awareness/</loc>
     <lastmod>2023-10-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//dice-irae.xyz/en/categories/</loc>
+    <loc>http://localhost:1313/en/categories/</loc>
     <lastmod>2023-10-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="//dice-irae.xyz/fr/categories/"
+                href="http://localhost:1313/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//dice-irae.xyz/en/categories/"
+                href="http://localhost:1313/en/categories/"
                 />
   </url><url>
-    <loc>//dice-irae.xyz/en/tags/children/</loc>
+    <loc>http://localhost:1313/en/tags/children/</loc>
     <lastmod>2023-10-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//dice-irae.xyz/en/tags/cyberpunk/</loc>
+    <loc>http://localhost:1313/en/tags/cyberpunk/</loc>
     <lastmod>2023-10-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="//dice-irae.xyz/fr/tags/cyberpunk/"
+                href="http://localhost:1313/fr/tags/cyberpunk/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//dice-irae.xyz/en/tags/cyberpunk/"
+                href="http://localhost:1313/en/tags/cyberpunk/"
                 />
   </url><url>
-    <loc>//dice-irae.xyz/en/projets/cyberpunk/</loc>
+    <loc>http://localhost:1313/en/projets/cyberpunk/</loc>
     <lastmod>2023-10-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="//dice-irae.xyz/fr/projets/cyberpunk/"
+                href="http://localhost:1313/fr/projets/cyberpunk/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//dice-irae.xyz/en/projets/cyberpunk/"
+                href="http://localhost:1313/en/projets/cyberpunk/"
                 />
   </url><url>
-    <loc>//dice-irae.xyz/en/categories/game-report/</loc>
+    <loc>http://localhost:1313/en/categories/game-report/</loc>
     <lastmod>2023-10-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//dice-irae.xyz/en/tags/heist/</loc>
+    <loc>http://localhost:1313/en/tags/heist/</loc>
     <lastmod>2023-10-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//dice-irae.xyz/en/</loc>
+    <loc>http://localhost:1313/en/</loc>
     <lastmod>2023-10-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="//dice-irae.xyz/fr/"
+                href="http://localhost:1313/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//dice-irae.xyz/en/"
+                href="http://localhost:1313/en/"
                 />
   </url><url>
-    <loc>//dice-irae.xyz/en/projets/</loc>
+    <loc>http://localhost:1313/en/projets/</loc>
     <lastmod>2023-10-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="//dice-irae.xyz/fr/projets/"
+                href="http://localhost:1313/fr/projets/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//dice-irae.xyz/en/projets/"
+                href="http://localhost:1313/en/projets/"
                 />
   </url><url>
-    <loc>//dice-irae.xyz/en/tags/</loc>
+    <loc>http://localhost:1313/en/tags/</loc>
     <lastmod>2023-10-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="//dice-irae.xyz/fr/tags/"
+                href="http://localhost:1313/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//dice-irae.xyz/en/tags/"
+                href="http://localhost:1313/en/tags/"
                 />
   </url><url>
-    <loc>//dice-irae.xyz/en/blog/</loc>
+    <loc>http://localhost:1313/en/blog/</loc>
     <lastmod>2023-02-05T09:03:08+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="//dice-irae.xyz/fr/blog/"
+                href="http://localhost:1313/fr/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//dice-irae.xyz/en/blog/"
+                href="http://localhost:1313/en/blog/"
                 />
   </url><url>
-    <loc>//dice-irae.xyz/en/blog/banniere/</loc>
+    <loc>http://localhost:1313/en/blog/banniere/</loc>
     <lastmod>2023-02-05T09:03:08+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="//dice-irae.xyz/fr/blog/banniere/"
+                href="http://localhost:1313/fr/blog/banniere/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//dice-irae.xyz/en/blog/banniere/"
+                href="http://localhost:1313/en/blog/banniere/"
                 />
   </url><url>
-    <loc>//dice-irae.xyz/en/tags/introduction/</loc>
+    <loc>http://localhost:1313/en/tags/introduction/</loc>
     <lastmod>2023-02-05T09:03:08+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="//dice-irae.xyz/fr/tags/introduction/"
+                href="http://localhost:1313/fr/tags/introduction/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//dice-irae.xyz/en/tags/introduction/"
+                href="http://localhost:1313/en/tags/introduction/"
                 />
   </url><url>
-    <loc>//dice-irae.xyz/en/categories/introduction/</loc>
+    <loc>http://localhost:1313/en/categories/introduction/</loc>
     <lastmod>2023-02-05T09:03:08+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="//dice-irae.xyz/fr/categories/introduction/"
+                href="http://localhost:1313/fr/categories/introduction/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//dice-irae.xyz/en/categories/introduction/"
+                href="http://localhost:1313/en/categories/introduction/"
                 />
   </url>
 </urlset>

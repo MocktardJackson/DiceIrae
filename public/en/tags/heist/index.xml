@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Heist on Dice Irae</title>
-    <link>//dice-irae.xyz/en/tags/heist/</link>
+    <link>http://localhost:1313/en/tags/heist/</link>
     <description>Recent content in Heist on Dice Irae</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
@@ -10,6 +10,6 @@
     <webMaster>contact@dice-irae.xyz (Bilow)</webMaster>
     <copyright>All Rights Reserved</copyright>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="//dice-irae.xyz/en/tags/heist/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/tags/heist/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

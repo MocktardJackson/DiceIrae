@@ -10,10 +10,9 @@
 }
 .item-thumbnail {
     display: block; /* Affiche toujours la miniature, mais ajuste son placement via flex-order ci-dessous */
-    padding: 0;
-    max-height: 300px;
+    padding-bottom: 1.5rem;
+    max-height: 350px;
     max-width: 500px;
-
     width: auto; /* Ajustement pour la cohérence */
     margin-bottom: 1rem; /* Ajouté pour l'espace entre la miniature et le texte sur mobile */
     background-color: var(--stager-bg);
@@ -21,6 +20,7 @@
         width: 100%;
         border-radius: .5rem;
         object-fit: cover;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Add shadow to the thumbnail image */
     }
 }
 
@@ -61,7 +61,7 @@ a {
 }
 
 /* Ajustements pour les écrans plus larges */
-@media (min-width: 768px) { /* Utilisez 768px comme point de rupture pour les tablettes et au-delà */
+@media (min-width: $md) { /* Utilisez 768px comme point de rupture pour les tablettes et au-delà */
     .item {
         flex-direction: row; /* Retour à la disposition en ligne pour les écrans plus larges */
     }
@@ -72,13 +72,23 @@ a {
     }
 }
 
-@media (max-width: 767px) { /* Utilisez 767px comme point de rupture pour les mobiles */
+@media (max-width: $md) { /* Utilisez 767px comme point de rupture pour les mobiles */
     .item {
         margin-bottom: 0rem;
         padding: 0rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        padding-inline: 3.3rem;
         border-bottom: 1px solid var(--primary-light); /* Utilisez var(--primary-light) pour la couleur de la bordure */
         &:last-child {
             border-bottom: none; /* Supprime la bordure pour le dernier élément */
+        }
+    }
+    .item_thumbnail {
+        margin-bottom: 3rem;
+        padding-top: 3rem;
+        img {
+            max-height: 300px;
         }
     }
 }	

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aventure on Dice Irae</title>
-    <link>//dice-irae.xyz/fr/tags/aventure/</link>
+    <link>http://localhost:1313/fr/tags/aventure/</link>
     <description>Recent content in Aventure on Dice Irae</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
@@ -10,6 +10,6 @@
     <webMaster>contact@dice-irae.xyz (Bilow)</webMaster>
     <copyright>All Rights Reserved</copyright>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="//dice-irae.xyz/fr/tags/aventure/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/fr/tags/aventure/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on Dice Irae</title>
-    <link>//dice-irae.xyz/en/tags/introduction/</link>
+    <link>http://localhost:1313/en/tags/introduction/</link>
     <description>Recent content in Introduction on Dice Irae</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
@@ -10,12 +10,12 @@
     <webMaster>contact@dice-irae.xyz (Bilow)</webMaster>
     <copyright>All Rights Reserved</copyright>
     <lastBuildDate>Sun, 05 Feb 2023 09:03:08 +0800</lastBuildDate>
-    <atom:link href="//dice-irae.xyz/en/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dice Irae</title>
-      <link>//dice-irae.xyz/en/blog/banniere/</link>
+      <link>http://localhost:1313/en/blog/banniere/</link>
       <pubDate>Sun, 05 Feb 2023 09:03:08 +0800</pubDate><author>contact@dice-irae.xyz (Bilow)</author>
-      <guid>//dice-irae.xyz/en/blog/banniere/</guid>
+      <guid>http://localhost:1313/en/blog/banniere/</guid>
       <description></description>
     </item>
   </channel>
